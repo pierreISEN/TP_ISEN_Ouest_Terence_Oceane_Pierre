@@ -5,18 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISEN – Apprentissage</title>
   <style>
-    body{margin:0;font-family:Arial, sans-serif}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    /* Header simple (F15) */
-    .site-header{background:#e30613;color:#fff;padding:12px 20px}
-    .site-header h1{margin:0;font-size:22px}
-    .site-nav a{color:#fff;margin-right:12px;text-decoration:none;font-weight:700}
-    .site-nav a:hover{text-decoration:underline}
+    /* F15 Header simple */
+    .site-header {
+      background: #e30613;
+      color: #fff;
+      padding: 12px 20px;
+    }
+    .site-header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    .site-nav a {
+      color: #fff;
+      margin-right: 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .site-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* F17 Section texte + image */
+    .apprentissage-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .apprentissage-text {
+      flex: 1;
+    }
+
+    .apprentissage-text h2 {
+      color: #e30613;
+      margin-bottom: 15px;
+    }
+
+    .apprentissage-text p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .apprentissage-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .apprentissage-img img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* F16 Footer simple */
+    .site-footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- F15 Header_simple -->
+  <!-- F15 Header simple -->
   <header class="site-header">
     <h1>ISEN – Projet Trinôme</h1>
     <nav class="site-nav">
@@ -27,5 +88,32 @@
     </nav>
   </header>
 
+  <!-- F17 Text + Image -->
+  <section class="apprentissage-section">
+    <div class="apprentissage-text">
+      <h2>Apprentissage à l’ISEN</h2>
+      <p>
+        L’ISEN Ouest propose un parcours en apprentissage qui permet d’allier 
+        formation académique et expérience professionnelle en entreprise.
+        Ce cursus favorise l’acquisition de compétences solides tout en étant 
+        rémunéré et en s’insérant progressivement dans le monde du travail.
+      </p>
+      <p>
+        Les étudiants alternent périodes de cours et périodes en entreprise, 
+        ce qui leur offre une véritable immersion dans leur futur métier.
+      </p>
+    </div>
+    <div class="apprentissage-img">
+        <img src="assets/img/apprentissage.png" alt="Schéma du cycle ingénieur en apprentissage">
 
+    </div>
+    </section>
+    
 
+  <!-- F16 Footer simple -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ISEN – Projet Trinôme. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
