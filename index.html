@@ -14,6 +14,13 @@
     .site-header h1{margin:0;font-size:22px}
     .site-nav a{color:#fff;margin-right:12px;text-decoration:none;font-weight:700}
     .site-nav a:hover{text-decoration:underline}
+    .dp-section{max-width:1200px;margin:40px auto;padding:0 20px}
+    .dp-section h2{font-size:24px;font-weight:700;margin-bottom:30px;color:#000}
+    .dp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px}
+    .dp-card{border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;transition:.2s;padding:3px 3px 0;position:relative}
+    .dp-card:hover{transform:translateY(-5px);box-shadow:0 6px 15px rgba(0,0,0,.1)}
+    .dp-card img{width:100%;height:auto;display:block}
+    .dp-card p{position:absolute;bottom:1em;left:0;margin:0;background:#05819d;color:#fff;font-weight:700;padding:1px .5em;display:inline}
   </style>
 </head>
 <body>
@@ -28,3 +35,27 @@
       <a href="postbac.html">Post-Bac</a>
     </nav>
   </header>
+<!-- F13 — IMAGES -->
+<section class="dp-section">
+  <h2>Nos formations ingénieurs</h2>
+  <div class="dp-grid">
+    <div class="dp-card">
+      <a href="https://isen-ouest.fr/domaines-professionnels/cybersecurite/">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+      </a>
+      <p>CYBERSÉCURITÉ</p>
+    </div>
+    <div class="dp-card">
+      <a href="https://isen-ouest.fr/domaines-professionnels/developpement-logiciel/">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+      </a>
+      <p>DÉVELOPPEMENT LOGICIEL</p>
+    </div>
+    <div class="dp-card">
+      <a href="https://isen-ouest.fr/domaines-professionnels/intelligence-artificielle/">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+      </a>
+      <p>INTELLIGENCE ARTIFICIELLE</p>
+    </div>
+  </div>
+</section>
