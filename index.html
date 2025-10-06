@@ -21,6 +21,15 @@
     .dp-card:hover{transform:translateY(-5px);box-shadow:0 6px 15px rgba(0,0,0,.1)}
     .dp-card img{width:100%;height:auto;display:block}
     .dp-card p{position:absolute;bottom:1em;left:0;margin:0;background:#05819d;color:#fff;font-weight:700;padding:1px .5em;display:inline}
+    .block-section{max-width:1200px;margin:40px auto;padding:0 20px}
+    .block-container{display:flex;gap:20px;flex-wrap:wrap}
+    .block-card{flex:1;min-width:280px;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
+    .block-card img{width:100%;height:auto;display:block}
+    .block-text{padding:15px}
+    .block-text h3{margin-top:0;font-size:20px;color:#e30613}
+    .block-text p{margin:10px 0;color:#333;line-height:1.4}
+    .block-text a{display:inline-block;margin-top:10px;padding:8px 14px;background:#e30613;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold}
+    .block-text a:hover{background:#b1050f}
   </style>
 </head>
 <body>
@@ -59,3 +68,30 @@
     </div>
   </div>
 </section>
+<!-- F14 — BLOCKS -->
+<section class="block-section">
+  <div class="block-container">
+
+    <!-- Bloc 1 : Post-Bac -->
+    <div class="block-card">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Post-bac">
+      <div class="block-text">
+        <h3>Formations Post-Bac</h3>
+        <p>Découvrez nos formations accessibles après le Bac et les différentes voies pour intégrer l’ISEN.</p>
+        <a href="postbac.html">En savoir plus</a>
+      </div>
+    </div>
+
+    <!-- Bloc 2 : Apprentissage -->
+    <div class="block-card">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Apprentissage">
+      <div class="block-text">
+        <h3>Apprentissage</h3>
+        <p>Accédez à la formation ingénieur par la voie de l’apprentissage, en combinant études et expérience professionnelle.</p>
+        <a href="apprentissage.html">En savoir plus</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
