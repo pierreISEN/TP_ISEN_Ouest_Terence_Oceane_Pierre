@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISEN – Formations</title>
+
+  <style>
+    :root { --main-color:#e30613; } /* rouge ISEN */
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, sans-serif; color:#111; background:#fff; }
+
+    header { background:var(--main-color); color:#fff; padding:12px 20px; }
+    header h1 { margin:0; font-size:22px; }
+    nav { margin-top:6px; }
+    nav a { color:#fff; text-decoration:none; font-weight:700; margin-right:12px; }
+    nav a:hover { text-decoration:underline; }
+
+    main { max-width:1000px; margin:40px auto; padding:0 20px; }
+    h2 { font-size:26px; margin:0 0 20px; padding-bottom:10px; border-bottom:3px solid var(--main-color); }
+
+    /* Galerie images (F27) */
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:20px; }
+    .card { background:#fff; border:1px solid #ddd; border-radius:10px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,.08); }
+    .card img { width:100%; display:block; }
+    .card .content { padding:14px; }
+    .card h3 { margin:0 0 8px; font-size:18px; color:var(--main-color); }
+    .card p { margin:0; color:#333; line-height:1.5; }
+
+    footer { background:#333; color:#fff; text-align:center; padding:10px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <!-- F25 Header simple -->
+  <header>
+    <h1>ISEN – Projet Trinôme</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apprentissage.html">Apprentissage</a>
+      <a href="formations.html">Formations</a>
+      <a href="post_bac.html">Post-Bac</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nos formations</h2>
+
+    <!-- F27 Images : 3 cartes d'illustration libres -->
+    <section class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/600/360?random=11" alt="Formation 1">
+        <div class="content">
+          <h3>Cybersécurité</h3>
+          <p>Protection des systèmes d’information et tests d’intrusion.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/600/360?random=12" alt="Formation 2">
+        <div class="content">
+          <h3>Développement logiciel</h3>
+          <p>Conception d’applications, génie logiciel, DevOps.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/600/360?random=13" alt="Formation 3">
+        <div class="content">
+          <h3>Intelligence artificielle</h3>
+          <p>Data science, machine learning et IA embarquée.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- F26 Footer simple -->
+  <footer>
+    <p>&copy; 2025 ISEN – Projet Trinôme. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
